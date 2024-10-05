@@ -1,6 +1,6 @@
 # Something
-.DS_Store
-.history/
+*.DS_Store
+*.history/
 
 # Ignore LaTeX build files
 *.aux

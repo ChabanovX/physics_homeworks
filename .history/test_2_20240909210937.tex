@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Solution}
+
+Let's denote:
+\begin{itemize}
+    \item \( v_b \) as the speed of the boat relative to the water.
+    \item \( v_r \) as the speed of the river.
+    \item The time elapsed since the bottle was dropped is \( t \) hours.
+\end{itemize}
+
+\subsection*{Upstream and Downstream Analysis}
+
+When the fisherman drops the bottle and moves upstream, the boat's effective speed is \( v_b - v_r \). The bottle will drift downstream with the river at \( v_r \).
+
+\textbf{Distance covered by the boat in 0.5 hours:}
+\[
+\text{Distance covered} = (v_b - v_r) \times 0.5 \, \text{km}
+\]
+
+\textbf{Distance to the bottle after 0.5 hours:}
+\[
+\text{Total distance to the bottle} = 5 + 0.5(v_b - v_r) \, \text{km}
+\]
+
+The fisherman now moves downstream to the bottle at a speed \( v_b + v_r \).
+
+\subsection*{Time Taken to Reach the Bottle}
+
+The time taken by the fisherman to reach the bottle after turning back:
+\[
+\text{Time taken} = \frac{5 + 0.5(v_b - v_r)}{v_b + v_r}
+\]
+
+Since the time taken to travel upstream and downstream is equal, we have:
+\[
+\text{Total time} = t = \frac{0.5}{(v_b - v_r)} + \frac{5 + 0.5(v_b - v_r)}{v_b + v_r}
+\]
+
+\subsection*{Simplifying the Equation}
+
+Using the fact that the bottle drifts with the river speed \( v_r \) and the total distance covered is 5 km:
+\[
+v_r t = 5 \, \text{km}
+\]
+
+Solving this equation for \( v_r \) will yield the speed of the river.
+
+\end{document}

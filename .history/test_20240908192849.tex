@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Problem 2}
+A ball is thrown horizontally from a height of $20 \, \text{m}$ and hits the ground with a speed that is three times its initial speed. What is the initial speed? Assume that there is no air drag and therefore acceleration in the horizontal direction is zero.
+
+\section*{Solution}
+
+Given:
+\begin{itemize}
+    \item Initial height: $h = 20 \, \text{m}$
+    \item Final speed: $v_f = 3v_0$
+    \item Acceleration in the horizontal direction is zero.
+\end{itemize}
+
+### Step 1: Vertical motion analysis
+
+The time it takes for the ball to hit the ground can be determined using the following kinematic equation for vertical motion:
+\[
+h = \frac{1}{2} g t^2
+\]
+where \( g \) is the acceleration due to gravity \( (g = 9.8 \, \text{m/s}^2) \). 
+
+Solving for time \( t \):
+\[
+t = \sqrt{\frac{2h}{g}} = \sqrt{\frac{2 \times 20 \, \text{m}}{9.8 \, \text{m/s}^2}} \approx 2.02 \, \text{s}
+\]
+
+### Step 2: Horizontal motion analysis
+
+The horizontal speed remains constant throughout the motion since there is no horizontal acceleration. The initial horizontal speed is \( v_0 \), and the final horizontal speed is \( v_f = 3v_0 \).
+
+### Step 3: Final speed calculation
+
+The final speed \( v_f \) is the vector sum of the horizontal and vertical components of the velocity. At the moment the ball hits the ground:
+\[
+v_f = \sqrt{v_0^2 + v_y^2}
+\]
+where \( v_y \) is the vertical speed when the ball hits the ground. \( v_y \) can be found using:
+\[
+v_y = g t
+\]
+Substitute the value of \( t \):
+\[
+v_y = 9.8 \, \text{m/s}^2 \times 2.02 \, \text{s} \approx 19.8 \, \text{m/s}
+\]
+
+### Step 4: Solve for \( v_0 \)
+
+Given that \( v_f = 3v_0 \), we can write:
+\[
+(3v_0)^2 = v_0^2 + v_y^2
+\]
+Expanding and rearranging:
+\[
+9v_0^2 = v_0^2 + v_y^2
+\]
+\[
+8v_0^2 = v_y^2
+\]
+\[
+v_0 = \frac{v_y}{\sqrt{8}} = \frac{19.8 \, \text{m/s}}{\sqrt{8}} \approx 6.99 \, \text{m/s}
+\]
+
+### Final Answer:
+The initial speed of the ball is approximately \( v_0 = 7 \, \text{m/s} \).
+
+\end{document}

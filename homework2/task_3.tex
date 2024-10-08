@@ -1,0 +1,93 @@
+
+Motorboat is moving. Drag force given as $-kv$.
+
+\bigbreak Given:
+\begin{itemize}
+    \item $ m = 3000\,kg $
+    \item $ \vec{F_d} = -k\vec{v} $
+    \item $ k = 100\,kg/s $
+    \item $ v(33) = 2\,m/s $
+\end{itemize}
+
+
+\bigbreak Questions:
+\begin{itemize}
+    \item Find the maximum speed the boat can reach
+\end{itemize}
+
+
+\subsection*{Solution}
+\subsubsection*{Derivations}
+
+The net force could be expressed as:
+
+$$ F_{net} = F_{engine} - F_{drag} $$
+$$ F_{net} = F_{engine} - kv $$
+
+Newton's law:
+
+$$ F_{net} = m \frac{dv}{dt} $$
+
+Therefore:
+
+$$ F_{engine} - kv = m \frac{dv}{dt}  $$
+
+\bigbreak Let us divide the equation by $m$:
+
+$$ \frac{F_{engine}}{m} - \frac{kv}{m} = \frac{dv}{dt}  $$
+\begin{equation}
+    \label{eq:diffur}
+    \frac{dv}{dt} + \frac{k}{m}v = \frac{F_{engine}}{m}
+\end{equation}
+
+\bigbreak Above we just got a first-order liner differential equation. Let us find the integrating factor.
+
+$$ \mu(t) = e ^ {\int \frac{k}{m} dt} = e^{\frac{k}{m}t} $$ 
+
+\bigbreak Now as we found the integrating factor, we can mul \ref{eq:diffur} by it.
+
+$$ e^{\frac{k}{m}t} \frac{dv}{dt} + e^{\frac{k}{m}t} \frac{k}{m}v = e^{\frac{k}{m}t} \frac{F_{engine}}{m} $$
+$$ \frac{d}{dt}(e^{\frac{k}{m}t} \cdot v) = \frac{F_{engine}}{m} e^{\frac{k}{m}t} $$
+
+\bigbreak Now we simply integrate both sides (with respect to t):
+
+$$ \int\frac{d}{dt}(e^{\frac{k}{m}t} \cdot v) dt = \int \frac{F_{engine}}{m} e^{\frac{k}{m}t} dt $$
+$$ e^{\frac{k}{m}t} \cdot v = \frac{F_{engine}}{k} e^{\frac{k}{m}t} + C $$
+\begin{equation}
+    \label{eq:velocity}
+    v(t) = \frac{F_{engine}}{k} + \frac{C}{e^{\frac{k}{m}t}}
+\end{equation}
+
+\subsubsection*{Substitution}
+
+\bigbreak Now let us apply initial conditions at \ref{eq:velocity}:
+\bigbreak At $t = 0$, $v(0) = 0$:
+
+$$ 0 = \frac{F_{engine}}{k} + C $$
+$$ C = - \frac{F_{engine}}{k} $$
+
+Reformat \ref{eq:velocity}:
+
+$$ v(t) = \frac{F_{engine}}{k} + \frac{- \frac{F_{engine}}{k}}{e^{\frac{k}{m}t}} $$
+$$ v(t) = \frac{F_{engine}}{k} (1 -  \frac{1}{e^{\frac{k}{m}t}}) $$
+
+\bigbreak At $t = 33$, $v(33) = 2m/s$:
+
+$$ 2m/s = \frac{F_{engine}}{k} (1 -  \frac{1}{e^{\frac{k}{m}33}}) $$
+$$ 2m/s = \frac{F_{engine}}{100kg/s} (1 -  \frac{1}{e^{\frac{100kg/s}{3000kg}33}}) $$
+
+Solve for $F_{engine}$:
+
+$$ F_{engine} = \frac{2m/s \cdot 100kg/s}{1 -  \frac{1}{e^{\frac{100kg/s}{3000kg}33}}} \approx 299.9N$$
+
+\bigbreak \ref{eq:velocity} Maximal velocity reaches when $ t \rightarrow \infty $
+\smallbreak Then $ C \rightarrow 0 $
+
+\bigbreak Hence:
+
+$$ v_{max} = \frac{F_{engine}}{k} = \frac{299.9N}{100kg/s} = \boxed{2.9m/s} $$
+
+\vfill \subsection*{ANSWER}
+\begin{itemize}
+    \item $3m/s$
+\end{itemize}

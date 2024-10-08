@@ -1,0 +1,88 @@
+Blocks A and B are hanging stationary. Find the maximum mass of block A
+
+\bigbreak Given:
+
+\begin{itemize}
+    \item $ m_B = 50\,kg $
+    \item $ \mu = 0.25 $  
+    \item $ \angle \theta = 30^{\circ} $
+    \item $ g = 9.8\,m/s^2 $
+\end{itemize}
+
+\bigbreak Questions:
+\begin{itemize}
+    \item Find the maximum mass of block A
+\end{itemize}
+
+
+\subsection*{Solution}
+\subsubsection*{Bodies Diagrams}
+\begin{itemize}
+    \item \textit{Block B} \begin{itemize}
+        \item Weight: $W_B = m_B \cdot g$
+        \item Normal Force: $N_B = W_B$
+        \item Friction Force: $f_B = N_B \cdot \mu$
+        \item Cord's tension: $T_B$
+    \end{itemize}
+
+    \item \textit{Block A} \begin{itemize}
+        \item Weight: $W_A = m_A \cdot g$
+        \item Cord's tension: $T_A$
+    \end{itemize}
+
+    \item \textit{Knot} \begin{itemize}
+        \item Cord's tension with $\angle \theta$ : $T$
+        \item Cord's vertical tension: $T_A$
+        \item Cord's horizontal tension: $T_B$
+    \end{itemize}
+\end{itemize}
+
+\bigbreak \subsubsection*{Position of Balance}
+For the balance to be, the following equations must hold:
+
+\begin{equation}
+    \label{eq:tb}
+    T_B = f_B \text{ (because the block's on the edge of moving)}
+\end{equation}
+\begin{equation}
+    \label{eq:ta}
+    T_A = W_A
+\end{equation}
+
+\begin{equation}
+    \label{eq:tbt}
+    T_B = T \cdot cos(\theta)
+\end{equation}
+\begin{equation}
+    \label{eq:tat}
+    T_A = T \cdot sin(\theta)
+\end{equation}
+
+\subsubsection*{Formula Deriving}
+
+From \ref{eq:tbt} $$ T = \frac{T_B}{cos(\theta)} $$
+Substitute into \ref{eq:tat} $$ \frac{T_B}{cos(\theta)} = \frac{T_A}{sin(\theta)} $$
+
+$$ \frac{T_B \cdot sin(\theta)}{cos(\theta)} = T_A $$
+Throw \ref{eq:ta} into this:
+
+$$ \frac{T_B \cdot sin(\theta)}{cos(\theta)} = W_A $$
+
+$$ \frac{T_B \cdot sin(\theta)}{cos(\theta)} = m_A \cdot g $$
+
+$$ T_B \cdot tg(\theta) = m_A \cdot g $$
+And do not forget to add \ref{eq:tb}
+
+$$ f_B \cdot tg(\theta) = m_A \cdot g $$
+$$ N_B \cdot \mu \cdot tg(\theta) = m_A \cdot g $$
+$$ m_B \cdot g \cdot \mu \cdot tg(\theta) = m_A \cdot g $$
+$$ m_A = m_B \cdot \mu \cdot tg(\theta) $$
+
+\subsubsection*{Substitute lol}
+
+$$ m_A =  50kg \cdot 0.25 \cdot tg(30) \approx \boxed{7.2kg} $$
+
+\vfill \subsection*{ANSWER}
+\begin{itemize}
+    \item $7.2kg$
+\end{itemize}

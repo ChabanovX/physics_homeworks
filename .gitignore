@@ -1,6 +1,7 @@
-# Something
+# Dev related
 *.DS_Store
 *.history/
+*.vscode/
 
 # Ignore LaTeX build files
 *.aux

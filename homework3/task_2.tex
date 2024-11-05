@@ -1,0 +1,71 @@
+An object slides down an inclined plane set. It successfully slides down, then covers the distance of 50 cm on the horizontal
+plane, and stops.
+
+\bigbreak Given:
+\begin{itemize}
+    \item $m = 0.05kg$
+    \item $\alpha = \angle30$
+    \item $ k=0.15 $
+    \item $ v_{init} = v_{final} = 0m/s $
+    \item $ s_1 = 0.5m $
+\end{itemize}
+
+\bigbreak Find:
+\begin{itemize}
+    \item $W_{friction} $
+\end{itemize}
+
+\section*{Solution}
+The loss in gravitational potential energy should equal the total work done by friction since the object starts and ends at rest.
+Potential energy at the top: 
+\begin{equation}
+    \label{eq:main}
+    E_{potential} = mgh = -W_{friction}
+\end{equation}
+
+Basically, we have to find $h$. Proceed to find accelerations.
+\smallbreak The net force on the incline is given by:
+$$  ma_1 = mg \sin\alpha - kmg \cos\alpha $$ 
+$$ a_1 = g(\sin\alpha - k \cos \alpha) = 9.81 \, (0.5 - 0.15 * 0.8660) \approx 3.63m/s^2 $$
+
+\bigbreak On the horizontal plane: $$ ma_2 = -kmg $$
+$$ a_2 = -km = -0.15 * 9.81 = -1.47m/s^2 $$
+
+\bigbreak Proceed further. 
+\smallbreak We will use the formula: $ v^2 = v_0^2 + 2 a s $
+
+\begin{enumerate}
+    \item \textbf{Velocity at the start of the horizontal.}
+    $$ v^2 = v_1^2 + 2 a_2 s_2 $$
+    Since the final velocity \( v = 0 \):
+    $$ 0 = v_1^2 + 2 (-1.47)(0.5) $$ \smallbreak
+    $$ v_1^2 = 2 * 1.47 * 0.5 = 1.47 \, \text{m}^2/\text{s}^2 $$
+
+    \item \textbf{Length of the Incline.}
+    \[
+    v_1^2 = v_0^2 + 2 a_1 s_1
+    \]
+    Since \( v_0 = 0 \):
+    $$ 1.47 = 2 * 3.63 * s_1 $$ 
+    \smallbreak $$ s_1 = \frac{1.47}{7.26} \approx 0.2027 \, \text{m} $$ 
+\end{enumerate}
+
+\bigbreak Now we can find height of the incline.
+
+$$ h = s_1 \sin\alpha = 0.2027 * 0.5 \approx 0.1013 \, \text{m} $$ \smallbreak
+
+Substitue into \ref{eq:main}: 
+
+
+$$ E_{\text{potential}} = m g h = 0.05 * 9.81 * 0.1013 \approx 0.05 \, \text{J} $$
+
+
+\[
+W_{\text{friction total}} = \boxed{-0.05 \, \text{J}}
+\]
+
+\vfill \subsection*{ANSWER}
+\begin{itemize}
+    \item $0.05 \, \text{J} $
+\end{itemize}
+

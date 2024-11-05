@@ -1,0 +1,97 @@
+A small mass slides down with zero initial velocity from the top of a smooth hill of height H.
+The foot of the hill has a portion of horizontal surface 
+before the vertical cliff of height h.
+
+
+\bigbreak Given: 
+\begin{itemize}
+    \item Mass starts from rest at the top of a smooth hill of height \( H \).
+    \item At the bottom of the hill, there's a horizontal surface leading to a vertical cliff of height \( h \).
+    \item At the bottom of the hill, there's a horizontal surface leading to a vertical cliff of height \( h \).
+\end{itemize}
+
+\bigbreak Find: 
+\begin{itemize}
+    \item What must be the height of the horizontal portion $(h/H = ?)$ to ensure the maximum distance $s$
+    covered by the flying mass?
+    \item What the maximum distance $s$
+\end{itemize}
+
+\section*{Solution} \subsection*{Horizontal portion}
+
+Since the hill is smooth (no friction), mechanical energy is conserved during the descent.
+\bigbreak Potential Energy at the Top:
+  \[
+  E_{\text{top}} = m g H
+  \]
+
+\smallbreak Potential Energy at Height \( h \):
+  \[
+  E_{\text{bottom}} = m g h
+  \]
+
+\smallbreak Kinetic Energy at the Bottom:
+  \[
+  K_{\text{bottom}} = \frac{1}{2} m v_0^2
+  \]
+
+\smallbreak Apply Energy Conservation:
+\[
+E_{\text{top}} = E_{\text{bottom}} + K_{\text{bottom}}
+\]
+\[
+m g H = m g h + \frac{1}{2} m v_0^2
+\]
+
+\smallbreak Solving for \( v_0 \):
+$$ \frac{1}{2} m v_0^2 = m g (H - h) $$
+$$ v_0 = \sqrt{2 g (H - h)} $$
+
+
+\bigbreak Now let's calculate time of flight off the cliff.
+\smallbreak Vertical Motion:
+  \[
+  y = v_{y0} t + \frac{1}{2} a t^2
+  \] \smallbreak 
+  Since the mass moves horizontally off the cliff:
+  \[
+  v_{y0} = 0, \quad a = -g, \quad y = -h
+  \] \smallbreak 
+  So:
+  $$
+  -h = 0 - \frac{1}{2} g t^2 $$
+  $$ t = \sqrt{\frac{2 h}{g}}
+  $$
+
+\bigbreak Proceed with Horizontal Distance \( s \)
+  \begin{equation}
+    \label{eq:maxdist}
+    s = v_0 t = \sqrt{2 g (H - h)} * \sqrt{\frac{2 h}{g}} = 2 \sqrt{h (H - h)}
+  \end{equation}
+
+We need to maximize:
+\[
+s(h) = 2 \sqrt{h (H - h)}
+\]
+
+Let's define:
+\[
+f(h) = h (H - h) = h H - h^2
+\]
+
+To find the maximum of \( f(h) \), take the derivative with respect to \( h \) and set it to zero:
+$$ f'(h) = H - 2 h = 0 $$
+$$ 2 h = H $$
+$$ \boxed{h = \frac{H}{2}} $$
+
+\subsection*{Maximum distance}
+Just simply substitute $h = \frac{H}{2}$ into \ref{eq:maxdist}.
+\[
+s_{\text{max}} = 2 \sqrt{\left( \frac{H}{2} \right) \left( H - \frac{H}{2} \right)} = 2 \sqrt{\left( \frac{H}{2} \right) \left( \frac{H}{2} \right)} = 2 \left( \frac{H}{2} \right) = \boxed{H}
+\]
+
+\vfill \subsection*{ANSWER}
+\begin{itemize}
+    \item $\frac{H}{2}$
+    \item $H$
+\end{itemize}

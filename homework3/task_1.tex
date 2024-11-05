@@ -1,0 +1,47 @@
+One particular glitch in the Mafia 3 video game resulted in the player’s character getting launched
+into the air after being intermittently stuck inside a motor boat.
+
+\bigbreak Given:
+\begin{itemize}
+    \item $m = 80kg$
+    \item $H = 70m$
+    \item $x = 0.5m$
+\end{itemize}
+
+\bigbreak Find: 
+\begin{itemize}
+    \item $k =$ ? (If the guy launch at $H$)
+    \item $v_{max}$ = ?
+\end{itemize}
+
+\section*{Solution} \subsection*{Finding the stiffness}
+To solve the task we must understand the processes behind it.
+Potential energy from the compressed spring is converted into kinetic energy,
+then into gravitational potential energy. Energy is conserved. 
+
+\bigbreak Energy from the spring: $$ E_{spring} = \frac{1}{2}kx^2 $$
+
+\bigbreak Gravitational potential energy at height $H$: $$ E_{gravity} = mgH $$
+
+\bigbreak Energy from the spring converts into gravitational potential energy: 
+$$ \frac{1}{2}kx^2 = mgH $$
+
+Solve for k: $$ k = \frac{2mgH}{x^2} = \frac{2* 80 * 9.81 * 70}{0.5^2} \approx \boxed{439,000N/m} $$
+
+\subsection*{Calculating the maximum speed}
+The maximum speed is going to be reached at the maximum of the kinetic energy.
+It is going to be achieved when potential energy from the spring is fully converted into kinetic energy.
+
+$$ E_{spring} = E_{kinetic} $$
+$$ \frac{1}{2}kx^2 = \frac{1}{2}mv_{max}^2 $$
+
+Solve for $v_{max}$:
+$$ v_{max} = \sqrt{\frac{kx^2}{m}} = \sqrt{\frac{439,000 * 0.5^2}{80}} \approx \boxed{37 m/s} $$
+
+\vfill \subsection*{ANSWER}
+\begin{itemize}
+    \item $439,000N/m$
+    \item $37 m/s$
+\end{itemize}
+
+

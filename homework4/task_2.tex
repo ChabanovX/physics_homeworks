@@ -1,0 +1,62 @@
+A projectile is shot from a gun at angle $\theta_0 = 60^\circ$ to the flat ground with an initial velocity of $v_0 = 20 \, \text{m/s}$. Once the projectile reaches its maximum height, it explodes into 2 pieces of equal mass, with the rear piece having zero horizontal velocity after the explosion (and thus vertically dropping to the ground, as shown in the figure below). \textbf{What will be the total travel distance $d$ (m, round to 1 decimal place) of the other piece of projectile from the gun, assuming zero air drag?}
+
+\bigbreak Given:
+\begin{itemize}
+    \item $\theta_0 = 60^\circ$
+    \item $v_0 = 20 \, \text{m/s}$
+    \item $M = 2 \cdot m$
+\end{itemize}
+
+\bigbreak Find:
+\begin{itemize}
+    \item $d_{second}$
+\end{itemize}
+
+\section*{Solution}
+Let's start by calculating projections of the initial velocity.
+    \[
+    v_{0x} = v_0 \cos(\theta_0) = 20\,\text{m/s} \times \cos(60^\circ) = 10\,\text{m/s}
+    \]
+    \[
+    v_{0y} = v_0 \sin(\theta_0) = 20\,\text{m/s} \times \sin(60^\circ) = 17.32\,\text{m/s}
+    \]
+Calculate time to reach maximum height. At maximum height, the vertical velocity is zero:
+\[
+t_{\text{up}} = \frac{v_{0y}}{g} = \frac{17.32\,\text{m/s}}{9.8\,\text{m/s}^2} \approx 1.767\,\text{s}
+\]
+Since we know time, let's calculate horizontal distance to this point.
+\[
+x_{\text{max}} = v_{0x} \times t_{\text{up}} = 10\,\text{m/s} \times 1.767\,\text{s} \approx 17.67\,\text{m}
+\]
+At this point the second part of horizontal distance left - travelling after the explosion.
+\textit{Let's apply conservation of horizontal momentum then.}
+$$ M v_{0x} = m v_{1x} + m v_{2x} $$
+Since \( v_{1x} = 0 \) (rear piece drops straight down), we have:
+\[
+M v_{0x} = 0 + m v_{2x} \implies v_{2x} = \frac{M v_{0x}}{\frac{M}{2}} = 2 v_{0x} = 20\,\text{m/s}
+\]
+The only thing left - to examine how long this piece is going to travel with this speed.
+We can extract time from vertical distance information.
+\[
+h_{\text{max}} = \frac{v_{0y}^2}{2g} = \frac{(17.32\,\text{m/s})^2}{2 \times 9.8\,\text{m/s}^2} \approx 15.31\,\text{m}
+\]
+
+\[
+t_{\text{fall}} = \sqrt{\frac{2 h_{\text{max}}}{g}} \implies
+t_{\text{fall}} = \sqrt{\frac{2 \times 15.31\,\text{m}}{9.8\,\text{m/s}^2}} \approx 1.767\,\text{s}
+\]
+Hence:
+\[
+d_{\text{forward}} = v_{2x} \times t_{\text{fall}} = 20\,\text{m/s} \times 1.767\,\text{s} \approx 35.34\,\text{m}
+\]
+\textbf{The full distance:}
+\[
+d = x_{\text{max}} + d_{\text{forward}} = 17.67\,\text{m} + 35.34\,\text{m} \approx \boxed{53.0\,\text{m}}
+\]
+ 
+\vfill \subsection*{ANSWER}
+\begin{itemize}
+    \item $53 \,m$
+\end{itemize}
+
+

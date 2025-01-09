@@ -1,0 +1,58 @@
+In February 1955, a paratrooper fell 370 m from an airplane without being able to open his chute but happened to land in snow, suffering only minor injuries. Assume that his speed at impact was \( v_f = 56 \, \text{m/s} \) (terminal speed), that his mass (including gear) was 85 kg, and that the magnitude of the constant force on him from the snow was at the survivable limit of \( 1.2 \times 10^5 \, \text{N} \).
+
+\bigbreak Given:
+\begin{itemize}
+    \item Event happened February 1995
+    \item $ h = 370 \,m$
+    \item $v_f = 56 \, m/s$
+    \item $m = 85 \, kg$
+    \item $F_{snow} = 1.2 \times 10^5 \, N$
+\end{itemize}
+
+\bigbreak Find:
+\begin{itemize}
+    \item the minimum depth of snow (cm, round to the nearest integer) that would have stopped him safely (15 pts);
+    \item time (s, round to 2 decimal places) required for the trooper to pass through this layer of snow before coming to a full stop (5 pts);
+    \item the magnitude of the impulse \( p \) (N·s, round to 2 decimal places) on him from the snow (5 pts).
+\end{itemize}
+
+\section*{Solution}
+In the task's context \textit{safely} means with the given force magnitude,
+since its survivable limit. Let's calculate how fast snow was changing paratrooper's velocity
+$$
+F_{\text{net}} = m g - F_{\text{snow}} = (85 \times 9.8) - (1.2 \times 10^5) = - 119,167 \, \text{N}
+$$
+\[
+a = \frac{F_{\text{net}}}{m} = \frac{-119,167}{85} \approx -1,402 \, \text{m/s}^2
+\]
+Pretty fast. Now find snow's depth:
+    \[
+    v_f^2 = v_0^2 + 2 a d
+    \]
+    \[
+    0 = (56)^2 - 2 \times 1,402 \times d
+    \]
+    \[
+    d = \frac{(56)^2}{2 \times 1,402} = \frac{3,136}{2,804} \approx 1.118 \, \text{m} = \boxed{112 \, \text{cm}}
+    \]
+Proceed using kinematic equation to find time.
+    \[
+    v_f = v_0 + a t
+    \]
+    \[
+    0 = 56 - 1,402 \times t
+    \]
+    \[
+    t = \frac{56}{1,402} \approx \boxed{0.04 \, \text{s}}
+    \]
+And calculate magnitude of Impulse
+\[
+|J| = |F \cdot t| = |120000 \times \frac{56}{1402}| = \boxed{4793.15 \, \text{N}\, \text{s}}
+\]
+
+\vfill \subsection*{ANSWER}
+\begin{itemize}
+    \item $ 112 \, c m$
+    \item $0.04\,s$ 
+    \item $4793.15 \, \text{N}\, \text{s}$
+\end{itemize}

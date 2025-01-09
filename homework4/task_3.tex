@@ -1,0 +1,104 @@
+Three blocks are placed on a frictionless surface, with blocks of masses $m_2$ and $m_3$ being initially at rest. Block 1 is moving with a velocity of $v_{1i} = 10 \, \text{m/s}$. It then collides with block 2 (left figure), which then collides with block 3 (right figure). The third block has mass $m_3 = 6 \, \text{kg}$. After the second collision, block 2 becomes stationary again, while block 3 has the velocity of $v_{3f} = 5 \, \text{m/s}$. 
+\textbf{Assuming all collisions to be elastic, find the final velocity $v_{1f}$ of block 1 (m/s, round to 1 decimal place).}
+
+\bigbreak Given:
+\begin{itemize}
+    \item \( m_3 = 6\,\text{kg} \)
+    \item \( v_{3f} = 5\,\text{m/s} \)
+    \item \( v_{2f} = 0\,\text{m/s} \)
+\end{itemize}
+
+\bigbreak Find:
+\begin{itemize}
+    \item $v_{1f}$
+\end{itemize}
+
+\section*{Solution} \subsection*{Second collision}
+Let's examine the event of the collision of second and third blocks a bit closer.
+\textbf{Conservation of Momentum:}
+\[
+m_2 v_{2i} + m_3 v_{3i} = m_2 v_{2f} + m_3 v_{3f}
+\]
+Since third block was resting and afterwards second block rest:
+\[
+m_2 v_{2i} + 0 = 0 + m_3 v_{3f}
+\]
+\begin{equation}
+    m_2 v_{2i} = 6\,\text{kg} \times 5\,\text{m/s} = 30\,\text{kg}\cdot\text{m/s}
+    \label{impulse}
+\end{equation}
+Also known, that kinetic energy was also conserved.
+\[
+\frac{1}{2} m_2 v_{2i}^2 + \frac{1}{2} m_3 v_{3i}^2 = \frac{1}{2} m_2 v_{2f}^2 + \frac{1}{2} m_3 v_{3f}^2
+\]
+\[
+\frac{1}{2} m_2 v_{2i}^2 + 0 = 0 + \frac{1}{2} m_3 v_{3f}^2
+\]
+\begin{equation}
+    \frac{1}{2} m_2 v_{2i}^2 = \frac{1}{2} \times 6\,\text{kg} \times (5\,\text{m/s})^2 = 75\,\text{J}
+    \label{kinetic_cons}
+\end{equation}
+\textbf{Combine:}
+\[
+v_{2i} = \frac{30\,\text{kg}\cdot\text{m/s}}{{m_2}}
+\quad \text{from \ref{impulse}. Putting in \ref{kinetic_cons} produces:}
+\]
+\[
+\frac{1}{2} m_2 \left( \frac{30}{m_2} \right)^2 = 75
+\]
+
+\[
+\implies m_2 = 6\,\text{kg}
+\]
+Therefore, \( v_{2i} = \frac{30}{6} = 5\,\text{m/s} \)
+
+\subsection*{First collision}
+The procedure is the same. \textbf{Conservation of Momentum:}
+    \[
+    m_1 v_{1i} = m_1 v_{1f} + m_2 v_{2i}
+    \]
+    Plug in known values:
+    \[
+    m_1 \times 10 = m_1 v_{1f} + 6\,\text{kg} \times 5\,\text{m/s}
+    \]
+    Simplify:
+    \begin{equation}
+        m_1 (10 - v_{1f}) = 30\,\text{kg}\cdot\text{m/s}
+        \label{secimp}
+    \end{equation}
+\textbf{Conservation of Kinetic Energy:}
+    \[
+    \frac{1}{2} m_1 v_{1i}^2 = \frac{1}{2} m_1 v_{1f}^2 + \frac{1}{2} m_2 v_{2i}^2
+    \]
+    Plug in known values:
+    \[
+    \frac{1}{2} m_1 (10)^2 = \frac{1}{2} m_1 v_{1f}^2 + \frac{1}{2} \times 6\,\text{kg} \times (5\,\text{m/s})^2
+    \]
+    Simplify:
+    \begin{equation}
+        m_1 (100 - v_{1f}^2) = 150\,\text{J} \quad \text{(2)}
+        \label{seckin}
+    \end{equation}
+Proceed:
+    \[
+    m_1 = \frac{30}{10 - v_{1f}} \quad \text{from \ref{secimp}. Substitute in \ref{seckin}}
+    \]
+    
+    \[
+    \left( \frac{30}{10 - v_{1f}} \right) (100 - v_{1f}^2) = 150
+    \]
+    \[
+    v_{1f}^2 - 5 v_{1f} - 50 = 0
+    \]
+    \[
+    v_{1f} = \frac{5 \pm \sqrt{225}}{2} = \boxed{\frac{5 \pm 15}{2}}
+    \]
+Positive value does not make physical sense. \( v_{1f} = -5\,\text{m/s} \)
+
+\vfill \subsection*{ANSWER}
+\begin{itemize}
+    \item $-5\,\text{m/s}$
+\end{itemize}
+
+
+

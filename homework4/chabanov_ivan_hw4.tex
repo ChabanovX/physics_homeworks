@@ -1,0 +1,32 @@
+\documentclass{article}
+
+% PACKAGES -------------------------------------------------------------------
+\usepackage{graphicx} % Required for inserting images
+
+\usepackage{xcolor} % For page background color
+% I want color of my current VsCode theme fit in with pdf document
+\definecolor{filtersun}{RGB}{245, 237, 228}
+\definecolor{softmaroon}{RGB}{128, 0, 32}
+\pagecolor{filtersun}    % Set the background color to black
+
+\usepackage{amsmath} % For aligning equations
+\numberwithin{equation}{section} % Number equations within sections
+\numberwithin{figure}{section} % Number figures within sections
+
+\usepackage{pgfplots} % For plotting graphs
+\pgfplotsset{compat=1.18} % For pgfplots version 1.18 or later
+
+% For hyperlinks
+\usepackage[colorlinks=true, linkcolor=softmaroon]{hyperref}
+% END OF PACKAGES ------------------------------------------------------------
+
+\begin{document}
+\input{title_page} % Include the title page
+
+\section{Problem} \input{task_1} % Solution #1
+\newpage \section{Problem} \input{task_2} % Solution #2
+\newpage \section{Problem} \input{task_3} % Solution #3
+\newpage \section{Problem} \input{task_4} % Solution #4
+% Sections are used to avoid numbering problem
+
+\end{document}
